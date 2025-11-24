@@ -5,7 +5,7 @@
             <div class="card-body">
                 <div class="d-flex justify-content-between align-items-center">
                     <h4>Product Stock</h4>
-                    <a href="#" class="btn btn-primary">New Product</a>
+                    <a href="/product/create" class="btn btn-primary">New Product</a>
                 </div>
                 <div class="table-responsive">
                     <table class="table table-striped table-hover">
@@ -27,7 +27,7 @@
                                 <td>1000$</td>
                                 <td>01</td>
                                 <td>
-                                    <a href="#" class="btn btn-sm btn-outline-primary mr-md-1 ">Edit</a>
+                                    <a href="/product/edit" class="btn btn-sm btn-outline-primary mr-md-1 ">Edit</a>
                                      <a href="#" class="btn btn-sm btn-outline-danger">Delete</a>
                                 </td>
                             </tr>
