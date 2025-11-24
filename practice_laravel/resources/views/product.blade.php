@@ -20,19 +20,28 @@
                             </tr>
                         </thead>
                         <tbody>
-                            <tr>
-                                <td>P001</td>
-                                <td>Iphone</td>
-                                <td>product_1.jpg</td>
-                                <td>1000$</td>
-                                <td>01</td>
+                            {{-- $products is key --}}
+                             {{-- $product  use to work on value of  any index your array --}}
+                             {{-- to jab yk value or data(filed) janh pi database we yk $product  mk use--}}
+                            @foreach ( $products as $product )
+                              <tr>
+                                <td>P{{ $product->id }}</td>
+                                 <td>product_1.jpg</td>
+                                <td>{{ $product->name }}</td>
+                                <td>{{ $product->price }}</td>
+                                <td>{{ $product->qty }}</td>
                                 <td>
                                     <a href="/product/edit" class="btn btn-sm btn-outline-primary mr-md-1 ">Edit</a>
                                      <a href="#" class="btn btn-sm btn-outline-danger">Delete</a>
                                 </td>
                             </tr>
+
+                            @endforeach
                         </tbody>
                     </table>
+                    <div class="mt-3">
+                        {{ $products->links() }}
+                    </div>
                 </div>
             </div>
         </div>
